@@ -1,6 +1,7 @@
 import Home from "./Home/Home";
 import Popular from "./Popular/Popular";
 import Battle from "./Battle/Battle";
+import Results from "./Results/Results";
 import Nav from "../components/Nav/Nav";
 import {createBrowserRouter} from "react-router-dom";
 
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
             {
                 path: "battle",
                 element: <Battle />
+            },
+            {
+                path: "battle/results",
+                element: <Results />
             },
             {
                 path: "*",

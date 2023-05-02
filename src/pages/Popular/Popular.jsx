@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import {fetchPopularRepos} from "../../constants/API";
+import {useSearchParams} from "react-router-dom";
 import LanguagesList from '../../components/LanguagesList';
 import PopularItemsList from '../../components/PopularItemsList';
 import Loader from '../../components/Loader';
-import {useSearchParams} from "react-router-dom";
+
 
 const Popular = () => {
     const [selectedLanguage, setSelectedLanguage] = useState('');
